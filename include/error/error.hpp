@@ -64,7 +64,7 @@ protected:
 #define DefineError(CODE_NAME, base_error, ID, name_str, HELP)                 \
     namespace __ensure_unuqie                                                  \
     {                                                                          \
-    class __error_##ID##                                                       \
+    class error_##ID                                                       \
     {};                                                                        \
     }                                                                          \
     class CODE_NAME : public base_error                                        \
