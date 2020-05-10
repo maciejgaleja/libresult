@@ -4,12 +4,12 @@
 #define LIB__LIBRESULT__INCLUDE__ERROR__ERROR_HPP
 
 
+#include <exception>
 #include <memory>
 #include <optional>
 #include <sstream>
 #include <string>
 #include <vector>
-#include <exception>
 
 namespace __ensure_unuqie
 {
@@ -17,7 +17,7 @@ class __error_0
 {};
 } // namespace __ensure_unuqie
 
-class Error: public std::exception
+class Error : public std::exception
 {
 public:
     Error(const std::string context) : m_context(context) {}
@@ -63,7 +63,7 @@ protected:
 #define DefineError(CODE_NAME, base_error, ID, name_str, HELP)                 \
     namespace __ensure_unuqie                                                  \
     {                                                                          \
-    class error_##ID                                                       \
+    class error_##ID                                                           \
     {};                                                                        \
     }                                                                          \
     class CODE_NAME : public base_error                                        \
