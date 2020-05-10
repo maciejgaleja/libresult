@@ -1,5 +1,4 @@
 /* @file          result.hpp                                                  */
-/* @date          2020-05-03                                                  */
 
 #ifndef LIB__LIBRESULT__INCLUDE__ERROR__RESULT_HPP
 #define LIB__LIBRESULT__INCLUDE__ERROR__RESULT_HPP
